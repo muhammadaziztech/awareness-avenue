@@ -1,0 +1,173 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
+{
+  "sections": {
+    "collection-banner": {
+      "type": "collection-banner",
+      "disabled": true,
+      "custom_css": [
+        "@media (max-width: 991px) {.color-scheme {display: none; }}",
+        ".h1 {font-size: 2.5em;}",
+        ".prose {margin-top: -20px; margin-bottom: -20px;}"
+      ],
+      "settings": {
+        "color_scheme": "scheme-1",
+        "image": "shopify://shop_images/untitled.1512.jpg",
+        "mobile_image": "shopify://shop_images/batc_1_square.jpg",
+        "image_size": "auto",
+        "allow_transparent_header": false,
+        "reveal": false,
+        "enable_parallax": false,
+        "show_image": false,
+        "show_collection_title": true,
+        "show_collection_description": true,
+        "show_breadcrumb": false,
+        "content_width": "xs",
+        "overlay_color": "#000000",
+        "overlay_opacity": 30
+      }
+    },
+    "rich_text_4LDLVc": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_VNVCMz": {
+          "type": "heading",
+          "settings": {
+            "text": "Emerald Cut Moissanite Rings",
+            "heading_tag": "h4"
+          }
+        }
+      },
+      "block_order": [
+        "heading_VNVCMz"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": false,
+        "content_width": "sm",
+        "text_position": "center",
+        "remove_vertical_spacing": false
+      }
+    },
+    "main": {
+      "type": "main-collection",
+      "custom_css": [
+        ".text-xxs {color: black !important; font-family: \"century gothic\" !important; opacity: 1; font-size: 1em;}",
+        ".text-with-icon {font-family: \"century gothic\" !important; text-transform: capitalize; font-size: 1em;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "hide_product_information": false,
+        "products_per_page": 36,
+        "products_per_row_mobile": "2",
+        "products_size_desktop": "medium",
+        "show_grid_mode_selector": true,
+        "horizontal_spacing_factor": 0.2,
+        "vertical_spacing_factor": 0.2,
+        "filter_layout": "drawer",
+        "quick_links_menu": "",
+        "show_sort_by": false,
+        "show_filters": true,
+        "show_results_count": false,
+        "show_filter_group_name": false,
+        "show_filter_values_count": false,
+        "open_filters_by_default": false
+      }
+    },
+    "faq_ekKG4h": {
+      "type": "faq",
+      "blocks": {
+        "question_FzHWgH": {
+          "type": "question",
+          "settings": {
+            "question": "How do I know I am getting the best value for money?",
+            "answer": "<p>We are committed to providing not just beautiful and ethically crafted jewelry, but also exceptional value. </p><p>We eliminate middlemen and retail markups, allowing us to offer premium quality jewelry at lower prices, all backed by a lifetime guarantee. </p>"
+          }
+        },
+        "question_MUdG8P": {
+          "type": "question",
+          "settings": {
+            "question": "Do you offer any guarantees?",
+            "answer": "<p>Yes, we offer a lifetime guarantee on all our jewelry. This covers any potential defects in materials or workmanship, ensuring your piece remains as beautiful as the day you first wore it.</p>"
+          }
+        },
+        "question_pKVtHz": {
+          "type": "question",
+          "settings": {
+            "question": "Why are your prices so affordable?",
+            "answer": "<p>Our direct-to-you model eliminates unnecessary retailer markups, allowing us to offer high-quality, beautifully crafted jewelry at fair prices. By controlling the entire process from production to purchase, we ensure that luxury is accessible to everyone without compromising on quality.</p>"
+          }
+        },
+        "question_9DiCHG": {
+          "type": "question",
+          "settings": {
+            "question": "Is financing available?",
+            "answer": "<p>To make our jewelry even more accessible, we offer financing options through our partner ShopPay, allowing you to enjoy your purchase now and pay over time.</p>"
+          }
+        },
+        "question_hkT37e": {
+          "type": "question",
+          "settings": {
+            "question": "How can I be sure the size will fit?",
+            "answer": "<p>We provide a detailed sizing guide on our product pages, including instructions on how to measure your size accurately. If the fit isn’t perfect, our easy exchange policy can help you find the right size.</p>"
+          }
+        },
+        "question_JAyKc3": {
+          "type": "question",
+          "settings": {
+            "question": "",
+            "answer": "<p>We stand behind the quality of our jewelry with a hassle-free 30-day return policy. If for any reason you're not completely satisfied, you can return or exchange any item within 30 days of receipt, as long as it’s in its original condition.</p>"
+          }
+        },
+        "question_VFTxWt": {
+          "type": "question",
+          "settings": {
+            "question": "How is the jewelry ethical?",
+            "answer": "<p>We use only lab-grown or ethically sourced stones. Our metals are high-quality recycled materials, wherever possible to minimize carbon footprint. Every moissanite item comes with GIA certification and tracing. </p>"
+          }
+        },
+        "question_VHhNEb": {
+          "type": "question",
+          "settings": {
+            "question": "What if I have allergies?",
+            "answer": "<p>We understand the importance of skin-friendly jewelry. Our pieces are  exclusively crafted using hypoallergenic   metals, making them safe for sensitive skin. Everyone can wear our jewelry comfortably and without any concerns.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "question_FzHWgH",
+        "question_MUdG8P",
+        "question_pKVtHz",
+        "question_9DiCHG",
+        "question_hkT37e",
+        "question_JAyKc3",
+        "question_VFTxWt",
+        "question_VHhNEb"
+      ],
+      "custom_css": [
+        ".prose {font-size: 0.9em;}"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "<em>Need More Information? </em>",
+        "title": "Frequently Asked Questions",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "collection-banner",
+    "rich_text_4LDLVc",
+    "main",
+    "faq_ekKG4h"
+  ]
+}

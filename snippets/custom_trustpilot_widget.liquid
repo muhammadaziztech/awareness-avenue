@@ -1,0 +1,77 @@
+<div class="custom_widget">
+  <p>Excellent</p>
+  <svg width="80" height="20" viewBox="0 0 80 16" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <!-- Star Ratings -->
+    <g transform="translate(0, 1)">
+        <rect width="15" height="15" fill="#00B67A"/>
+        <polygon points="7.5,2 9,6 13,6 10,9 11,13 7.5,10.5 4,13 5,9 2,6 6,6" fill="white"/>
+    </g>
+    <g transform="translate(17, 1)">
+        <rect width="15" height="15" fill="#00B67A"/>
+        <polygon points="7.5,2 9,6 13,6 10,9 11,13 7.5,10.5 4,13 5,9 2,6 6,6" fill="white"/>
+    </g>
+    <g transform="translate(34, 1)">
+        <rect width="15" height="15" fill="#00B67A"/>
+        <polygon points="7.5,2 9,6 13,6 10,9 11,13 7.5,10.5 4,13 5,9 2,6 6,6" fill="white"/>
+    </g>
+    <g transform="translate(51, 1)">
+        <rect width="15" height="15" fill="#00B67A"/>
+        <polygon points="7.5,2 9,6 13,6 10,9 11,13 7.5,10.5 4,13 5,9 2,6 6,6" fill="white"/>
+    </g>
+    <g transform="translate(68, 1)">
+        <rect width="15" height="15" fill="#f0f0f0"/>
+        <rect width="7.5" height="15" fill="#00B67A"/>
+        <polygon points="7.5,2 9,6 13,6 10,9 11,13 7.5,10.5 4,13 5,9 2,6 6,6" fill="white"/>
+    </g>
+</svg>
+
+  <svg width="61" height="25" viewBox="0 0 94 34" xmlns="http://www.w3.org/2000/svg" fill="none">
+    <!-- Trustpilot Logo Star and Text -->
+    <g transform="translate(0, 5)">
+        <text x="0" y="20" font-family="Arial" font-size="18" fill="#00B67A">★</text>
+        <text x="18" y="20" font-family="Arial" font-size="18" fill="#000">Trustpilot</text>
+    </g>
+</svg>
+</div>
+<style>
+  .custom_widget p {
+    font-size: 13.5px;
+        height: 20px;
+  }
+  .custom_widget {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    justify-content:flex-end;
+    margin-bottom: -40px;
+        z-index: 99;
+    position: relative;
+    max-width:max-content;
+        margin-left: auto;
+}
+  .loox-rating,a[href='#looxReviews'] {
+        width: max-content;
+    display: block;
+}
+  span.loox-rating-label {
+    font-size: 12px;
+}
+  .loox-rating .loox-rating-content{
+    gap:0px;
+  }
+  @media(max-width:550px){
+    .custom_widget p{
+      font-size:12.5px;
+    }
+    .custom_widget{
+      gap:3px;
+      justify-content: flex-start;
+      margin-bottom: -20px;
+    }
+  }
+  @media(max-width:1100px) and (min-width:1000px){
+    .custom_widget p{
+      display:none;
+    }
+  }
+</style>

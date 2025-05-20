@@ -1,0 +1,143 @@
+<style>
+  .countdown-timer {
+    background-color: {{section.settings.bg}};
+    color: {{section.settings.color}};
+    padding: 15px;
+    border-radius: 5px;
+    text-align: center;
+    display:none;
+}
+.countdown-timer .countdown-label {
+    font-weight: bold;
+    font-size: 16px;
+}
+#countdown-display {
+    font-size: 18px;
+    font-weight: bold;
+    display: inline-block;
+    margin-left: 10px;
+}
+
+</style>
+
+{% schema %}
+{
+  "name": "Flash Sale Countdown",
+  "settings": [
+    {
+      "type": "text",
+      "id": "label",
+      "label": "Countdown Label",
+      "default": "Sale ends in:"
+    },
+    {
+      "type": "checkbox",
+      "id": "enable_flash_sale",
+      "label": "Enable Flash Sale Timer",
+      "default": false
+    },
+    {
+      "type": "text",
+      "id": "timer_duration",
+      "label": "Timer Duration (in seconds)",
+      "default": "86400", 
+      "info": "Enter the timer duration in seconds. E.g., 86400 for 1 day, 172800 for 2 days."
+    },
+    {
+      "type": "checkbox",
+      "id": "end_naturally",
+      "label": "End Timer Naturally (Hide when time is up)",
+      "default": false
+    },
+    {
+      "type": "color",
+      "id": "bg",
+      "label": "Background Color",
+      "default": "#000"
+    },
+    {
+      "type": "color",
+      "id": "color",
+      "label": "Text Color",
+      "default": "#fff"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Flash Sale Timer",
+      "category": "Countdown Timer"
+    }
+  ]
+}
+{% endschema %}
+
+<script>
+let countdownInterval;
+let countdownEnd = false;
+
+function startCountdown(duration, sectionId, endNaturally) {
+    const endTime = new Date().getTime() + duration; // Set end time
+
+    updateCountdownDisplay(endTime, sectionId);
+
+    countdownInterval = setInterval(function () {
+        const now = new Date().getTime();
+        const timeRemaining = endTime - now;
+
+        if (timeRemaining >= 0) {
+            updateCountdownDisplay(endTime, sectionId);
+        } else {
+            if (endNaturally) {
+                clearInterval(countdownInterval);
+                document.querySelector(`#countdown-timer-${sectionId}`).style.display = 'none';
+            } else {
+                clearInterval(countdownInterval);
+                startCountdown(duration, sectionId, endNaturally); 
+            }
+        }
+    }, 1000);
+}
+
+function updateCountdownDisplay(endTime, sectionId) {
+    const now = new Date().getTime();
+    const timeRemaining = endTime - now;
+
+    const days = Math.floor(timeRemaining / (1000 * 60 * 60 * 24));
+    const hours = Math.floor((timeRemaining % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const minutes = Math.floor((timeRemaining % (1000 * 60 * 60)) / (1000 * 60));
+    const seconds = Math.floor((timeRemaining % (1000 * 60)) / 1000);
+
+    document.querySelector(`#countdown-display-${sectionId}`).innerHTML =
+        days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+}
+
+function toggleCountdown(sectionId, duration, showTimer, endNaturally) {
+    const timerElement = document.querySelector(`#countdown-timer-${sectionId}`);
+
+    if (showTimer) {
+        countdownEnd = false;
+        timerElement.style.display = 'block'; // Show timer
+        startCountdown(duration, sectionId, endNaturally); 
+    } else {
+        countdownEnd = true;
+        clearInterval(countdownInterval);
+        timerElement.style.display = 'none'; // Hide timer
+    }
+}
+
+</script>
+{% if section.settings.enable_flash_sale %}
+  <div id="countdown-timer-{{ section.id }}" class="countdown-timer">
+    <span class="countdown-label">{{ section.settings.label }}</span>
+    <span id="countdown-display-{{ section.id }}"></span>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var duration = parseInt('{{ section.settings.timer_duration }}') * 1000; 
+      var endNaturally = {{ section.settings.end_naturally | json }};
+
+      toggleCountdown('{{ section.id }}', duration, true, endNaturally);
+    });
+  </script>
+{% endif %}

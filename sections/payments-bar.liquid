@@ -1,0 +1,68 @@
+<style>
+  .bar_{{ section.id }}{
+    background-color:{{section.settings.section_background}};
+    padding:8px 10px;
+    max-width:100%;
+  }
+  .payment-row{
+    display:flex;
+    gap:10px;
+    justify-content: center;
+    align-items:center;
+  }
+  .bar_{{ section.id }} .payment-icon svg{
+    width:70px;
+  }
+  .payment-txt{
+    color: #fff;
+    font-family: inherit;
+    font-size: 20px;
+    font-weight: 500;
+  }
+  @media(max-width:560px){
+  .payment-txt{
+    font-size:14px;
+  }
+  }
+</style>
+
+<div class="Main-bar bar_{{ section.id }}">
+  <div class="payment-row">
+    
+    <h3 class="payment-txt">{{ section.settings.Payment_txt }}</h3>
+    
+    <div class="payment-icon">
+    <img src="https://cdn.shopify.com/s/files/1/1559/9679/files/Shop_Pay.svg?v=1698233357" width="width" height="height" style="max-width:60px;">
+    </div>
+    
+    <div class="payment-icon">
+      {% render 'sezzle-icon' %}
+    </div>
+    
+    <div class="payment-icon">
+      {% render 'afterpay-icon' %}
+    </div>
+    
+  </div>
+</div>
+
+{% schema %}
+  {
+    "name": "Payments Bar",
+    "settings": [
+      {
+        "type": "color",
+        "id": "section_background",
+        "label": "Section Background"
+      },
+      {
+        "type": "text",
+        "id": "Payment_txt",
+        "label": "Text"
+      }
+    ],
+    "presets": [
+      {"name": "payments-bar"}
+    ]
+  }
+{% endschema %}

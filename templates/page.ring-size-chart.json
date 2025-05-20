@@ -1,0 +1,117 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {
+        "color_scheme": "",
+        "show_title": true,
+        "page_width": "xs"
+      }
+    },
+    "size_chart_faq_DknTAw": {
+      "type": "size-chart-faq",
+      "blocks": {
+        "question_AbnVpP": {
+          "type": "question",
+          "settings": {
+            "question": "<strong>How to Measure Your Ring Size?</strong>",
+            "answer": "",
+            "image_1": "shopify://shop_images/ChatGPT_Image_Apr_16_2025_07_57_05_AM.png",
+            "img_text_1": "1. Grab a ruler, marker and some string for this process.",
+            "image_2": "shopify://shop_images/ChatGPT_Image_Apr_16_2025_07_59_24_AM.png",
+            "img_text_2": "2. Wrap the string tightly around your finger.",
+            "image_3": "shopify://shop_images/Skaermbillede_2025-04-16_081950.png",
+            "img_text_3": "3. Mark the string where it overlaps on your finger.",
+            "image_4": "shopify://shop_images/Untitled_design_30.png",
+            "img_text_4": "4. Measure the distance between the two marks in millimeters and use the charts below to find your size!",
+            "sc_video": "shopify://files/videos/ba5ae20b4ee44f6fbcd386cc461a19a9.HD-720p-1.6Mbps-15225595.mp4"
+          }
+        },
+        "category_f8YdCq": {
+          "type": "category",
+          "settings": {
+            "title": "<strong>Ring Size Chart</strong>",
+            "text": "",
+            "icon": "none",
+            "icon_width": 16
+          }
+        },
+        "question_aAgLEp": {
+          "type": "question",
+          "settings": {
+            "question": "Find Your Size Here (For US/CA)",
+            "answer": "",
+            "img_text_1": "",
+            "img_text_2": "",
+            "img_text_3": "",
+            "img_text_4": "",
+            "size_chart_img": "shopify://shop_images/us_ring_size_chart_large_aa9461ef-4993-4f22-9f0d-bca75d9b3784.png"
+          }
+        },
+        "question_KzcKHH": {
+          "type": "question",
+          "settings": {
+            "question": "Find Your Size Here (For UK/AU)",
+            "answer": "",
+            "img_text_1": "",
+            "img_text_2": "",
+            "img_text_3": "",
+            "img_text_4": "",
+            "size_chart_img": "shopify://shop_images/uk_ring_size_chart_large_f1c8f201-6c8d-42b2-9243-03301595b6b5.png"
+          }
+        },
+        "question_3G9AqA": {
+          "type": "question",
+          "settings": {
+            "question": "Find Your Ring Size Here (For EU)",
+            "answer": "",
+            "img_text_1": "",
+            "img_text_2": "",
+            "img_text_3": "",
+            "img_text_4": "",
+            "size_chart_img": "shopify://shop_images/eu_ring_size_chart_large_81f6706e-dd8a-4c92-90b7-35a9aa1b5aeb.png"
+          }
+        },
+        "category_zMypcN": {
+          "type": "category",
+          "settings": {
+            "title": "Shop with Confidence at Awareness Avenue",
+            "text": "<p>We want you to love your piece, truly. That’s why we offer easy 30-day returns and exchanges—no stress, no hassle. From the day your order arrives, you have a full 30 days to return or swap it out for a different size or style.</p><p>And if the fit isn’t quite perfect? We’ve got you. We’ll cover up to $50 for resizing at your local jeweler, so you can get that just-right fit without the worry.</p><p>Your confidence matters to us—every step of the way.</p>",
+            "icon": "none",
+            "icon_width": 16
+          }
+        }
+      },
+      "block_order": [
+        "question_AbnVpP",
+        "category_f8YdCq",
+        "question_aAgLEp",
+        "question_KzcKHH",
+        "question_3G9AqA",
+        "category_zMypcN"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "show_categories": false,
+        "subheading": "",
+        "title": "",
+        "content": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "size_chart_faq_DknTAw"
+  ]
+}

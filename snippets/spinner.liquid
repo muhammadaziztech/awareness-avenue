@@ -1,0 +1,59 @@
+<span class="atc-spinner inset-0 absolute items-center justify-center">
+    <svg class="animate-spin w-[20px] h-[20px]" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none">
+      <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+      <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+    </svg>
+  </span>
+
+<style>
+  .buy-buttons button.button[disabled=disabled] + span.atc-spinner{
+    display:block;
+  }
+  .buy-buttons button.button,.checkout-button-group button,.globo-formbuilder-open{
+    transition:0s !important;
+  }
+   .buy-buttons button.button:hover,.globo-formbuilder-open:hover{
+    background:#666666 !important;
+    color:#fff !important;
+    border-color:#666666 !important;
+  }
+  @media(min-width:768px){
+    .checkout-button-group button:hover{
+      background:#666666 !important;
+      color:#fff !important;
+      border-color:#666666 !important;
+    }
+  }
+  .buy-buttons button.button[disabled=disabled],.checkout-button-group button.selected,.checkout-button-group button.selected *{
+    color:transparent !important;
+    background:#666666 !important;
+    border-color:#666666 !important;
+  }
+  .buy-buttons,.checkout-button-group{
+    position:relative;
+  }
+  span.atc-spinner {
+    display:none ;
+    position: absolute;
+    z-index: 999999;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 26px;
+    width: 26px;
+  }
+  .opacity-25 {
+    opacity: .25;
+  }
+  .opacity-75 {
+    opacity: .75;
+  }
+  @keyframes spin {
+    to {
+        transform: rotate(1turn)
+    }
+  }
+  .animate-spin {
+    animation: spin 1s linear infinite
+  }
+</style>
